@@ -10,6 +10,7 @@ import CategoryPage from "./pages/CategoryPage";
 import SubCategoryPage from "./pages/SubCategoryPage";
 import DesignStudio from "./pages/DesignStudio";
 import ArtistsCorner from "./pages/ArtistsCorner";
+import ProductDetail from "./pages/ProductDetail";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/design" element={<DesignStudio />} />
           <Route path="/artists-corner" element={<ArtistsCorner />} />
           <Route path="/artists-corner/:category" element={<ArtistsCorner />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
