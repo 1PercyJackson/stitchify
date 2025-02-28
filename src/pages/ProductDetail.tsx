@@ -28,6 +28,7 @@ import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ProductCard } from "@/components/ProductCard";
+import { Label } from "@/components/ui/label";
 
 // Mock product data - in a real app, this would come from an API
 const productData = {
