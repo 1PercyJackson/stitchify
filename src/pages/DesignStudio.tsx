@@ -18,7 +18,8 @@ import {
   ShoppingBag, 
   ChevronDown,
   RefreshCw,
-  CheckCircle2
+  CheckCircle2,
+  X
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -34,7 +35,6 @@ import {
   SelectValue 
 } from "@/components/ui/select";
 import { toast } from "sonner";
-import { useEffect, useRef, useState } from "react";
 
 interface ColorOption {
   name: string;
