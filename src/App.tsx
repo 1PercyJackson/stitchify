@@ -11,6 +11,7 @@ import SubCategoryPage from "./pages/SubCategoryPage";
 import DesignStudio from "./pages/DesignStudio";
 import ArtistsCorner from "./pages/ArtistsCorner";
 import ProductDetail from "./pages/ProductDetail";
+import TailorNova from "./pages/TailorNova";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/:category" element={<CategoryPage />} />
           <Route path="/:category/:subcategory" element={<SubCategoryPage />} />
           <Route path="/design" element={<DesignStudio />} />
+          <Route path="/designer" element={<TailorNova />} />
           <Route path="/artists-corner" element={<ArtistsCorner />} />
           <Route path="/artists-corner/:category" element={<ArtistsCorner />} />
           <Route path="/product/:id" element={<ProductDetail />} />
