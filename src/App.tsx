@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -26,10 +25,12 @@ const App = () => (
           <Route path="/:category" element={<CategoryPage />} />
           <Route path="/:category/:subcategory" element={<SubCategoryPage />} />
           <Route path="/design" element={<DesignStudio />} />
-          <Route path="/designer" element={<TailorNova />} />
           <Route path="/artists-corner" element={<ArtistsCorner />} />
+          <Route path="/artists-corner/custom-design" element={<TailorNova />} />
           <Route path="/artists-corner/:category" element={<ArtistsCorner />} />
           <Route path="/product/:id" element={<ProductDetail />} />
+          {/* Keep designer route for backward compatibility */}
+          <Route path="/designer" element={<TailorNova />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
