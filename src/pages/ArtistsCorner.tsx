@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   ArrowLeft, 
-  PaintBrush, 
+  Paintbrush, 
   Palette, 
   DollarSign, 
   TrendingUp,
@@ -189,7 +188,7 @@ const ArtistsCorner = () => {
           <div className="lg:col-span-3 space-y-6">
             <div className="bg-white rounded-xl shadow-sm p-6">
               <h2 className="text-lg font-semibold mb-4 flex items-center">
-                <PaintBrush className="h-5 w-5 mr-2 text-indigo-600" />
+                <Paintbrush className="h-5 w-5 mr-2 text-indigo-600" />
                 Artist Marketplace
               </h2>
               
